@@ -4,7 +4,7 @@ import Cards from './Cards';
 const CardsList = (props) => {
         return (
             <div className="ui grid container">
-                <div className="four wide column">{props.image}</div>
+                <div className="four wide column"><Cards /></div>
                 <div className="four wide column">Test2</div>
                 <div className="four wide column">Test3</div>
                 <div className="four wide column">Test4</div>

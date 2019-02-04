@@ -5,7 +5,7 @@ const Cards = () => {
     return (
         <div class="ui card">
             <div class="image">
-                <img></img>
+                <img src="https://c1.staticflickr.com/9/8370/8406752121_379eee2281_z.jpg"></img>
             </div>
         </div>
     );
