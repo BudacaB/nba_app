@@ -1,19 +1,19 @@
 import React from 'react';
-import Cards from './Cards';
+import Card from './Card';
 
-const CardsList = (props) => {
+class CardsList extends React.Component {
+    
+    renderCardsList() {
         return (
-            <div className="ui grid container">
-                <div className="four wide column"><Cards /></div>
-                <div className="four wide column">Test2</div>
-                <div className="four wide column">Test3</div>
-                <div className="four wide column">Test4</div>
-                <div className="four wide column">Test5</div>
-                <div className="four wide column">Test6</div>
-                <div className="four wide column">Test7</div>
-                <div className="four wide column">Test8</div>
-            </div>
+                this.props.cards.map((currentCard) => {
+                        return <Card card={currentCard} key={currentCard.title}/>
+                })
         );
-}
+    }
+
+    render() {
+        return this.renderCardsList();
+    }
+} 
 
 export default CardsList;
