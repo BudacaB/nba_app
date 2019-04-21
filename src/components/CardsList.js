@@ -1,12 +1,12 @@
 import React from 'react';
-import Card from './Card';
+import AppCard from './Card';
 
 class CardsList extends React.Component {
     
     renderCardsList() {
         return (
                 this.props.cards.map((currentCard) => {
-                        return <Card card={currentCard} key={currentCard.title}/>
+                        return <AppCard card={currentCard} key={currentCard.title}/>
                 })
         );
     }
