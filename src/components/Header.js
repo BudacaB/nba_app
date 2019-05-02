@@ -3,10 +3,30 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <h2>Welcome to the NBA Trash Talk Hall of Fame!</h2>
-            <h3>Get your daily dose of trash talk fun!</h3>
+
+        <div class="ui secondary  menu">
+            <a class="item active">
+                Home
+            </a>
+            <a class="item">
+                Messages
+            </a>
+            <a class="item">
+                Friends
+            </a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search..."></input>
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+                <a class="ui item">
+                Logout
+                </a>
+            </div>
         </div>
+        
     )
 }
 

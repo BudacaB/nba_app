@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import CardsList from './CardsList';
+import AppMenu from './Menu';
 
 class App extends React.Component {
     render() {
@@ -31,7 +32,16 @@ class App extends React.Component {
             <div>
                 <div><Header /></div>
                 <br></br>
-                    <CardsList cards={cardsList} />
+                <div>
+                    <h2>Welcome to the NBA Trash Talk Hall of Fame!</h2>
+                    <h3>Get your daily dose of trash talk fun!</h3>
+                </div>
+                <br></br>
+                <div class="ui grid">
+                    <div class="four wide column"><AppMenu /></div>
+                    <div class="eight wide column"><CardsList cards={cardsList} /></div>
+                    <div class="four wide column"></div>
+                </div> 
             </div>
         );
     }
