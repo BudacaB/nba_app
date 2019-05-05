@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import CardsList from './CardsList';
 import AppMenu from './Menu';
+import Register from './Register';
 
 class App extends React.Component {
     render() {

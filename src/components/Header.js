@@ -1,11 +1,12 @@
 import './Header.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
 
         <div class="ui secondary  menu">
-            <a class="item active">
+            <a class="item active" href="http://localhost:3000">
                 Home
             </a>
             <a class="item">
@@ -22,7 +23,10 @@ const Header = () => {
                     </div>
                 </div>
                 <a class="ui item">
-                Logout
+                <Link to="/login">Login</Link>
+                </a>
+                <a class="ui item">
+                <Link to="/register">Register</Link>
                 </a>
             </div>
         </div>
