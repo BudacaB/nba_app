@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import CardsList from './CardsList';
 import AppMenu from './Menu';
-import Register from './Register';
+import QuoteForm from './QuoteForm';
 
 class App extends React.Component {
     render() {
@@ -39,6 +39,7 @@ class App extends React.Component {
                 </div>
                 <br></br>
                 <div class="ui grid">
+                    <div class="sixteen column centered row"><QuoteForm /></div>
                     <div class="four wide column"><AppMenu /></div>
                     <div class="eight wide column"><CardsList cards={cardsList} /></div>
                     <div class="four wide column"></div>
